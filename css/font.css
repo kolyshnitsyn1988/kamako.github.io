@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Museo-Sans-Cyrl-900";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Museo-Sans-Cyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo-Sans-Cyrl-900.ttf") format("truetype"); }
+@font-face {
+  font-family: "Museo-Sans-Cyrl-700";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Museo-Sans-Cyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo-Sans-Cyrl-700.ttf") format("truetype"); }
+@font-face {
+  font-family: "Museo-Sans-Cyrl-500";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Museo-Sans-Cyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo-Sans-Cyrl-500.ttf") format("truetype"); }
+@font-face {
+  font-family: "Noto-Serif-Italic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Noto-Serif-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Noto-Serif-Italic.ttf") format("truetype"); }
+
+/*# sourceMappingURL=font.css.map */

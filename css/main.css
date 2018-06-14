@@ -1,0 +1,187 @@
+body {
+  font-family: "Museo-Sans-Cyrl-900", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+  line-height: 1.6;
+  margin: 0;
+  overflow-x: hidden; }
+
+a, a:hover, a:focus, a:visited, button, button:hover, button:visited, button:focus {
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style-type: none; }
+
+.hidden {
+  display: none; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+
+.header .header__text {
+  display: flex;
+  height: 50px;
+  background-color: #0066a1;
+  justify-content: center;
+  align-items: center; }
+  .header .header__text .text__header {
+    font-size: 0.8em;
+    line-height: 19.93px;
+    color: #ffffff; }
+  .header .header__text .ic__close {
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../img/close.svg) no-repeat;
+    margin-left: 12px; }
+
+.big-img {
+  height: 530px;
+  background: url(../img/kamako-screen.jpg) top center no-repeat;
+  background-hover: cover; }
+  .big-img .big__img_wrapp {
+    height: 75px;
+    background: #ffffff; }
+    .big-img .big__img_wrapp .mnu__wrapp {
+      display: flex;
+      height: 75px;
+      justify-content: space-around; }
+      .big-img .big__img_wrapp .mnu__wrapp .logo {
+        width: 86px;
+        height: 86px;
+        background: url(../img/logo.png) no-repeat;
+        margin-left: 0.8%; }
+      .big-img .big__img_wrapp .mnu__wrapp .mnu {
+        width: 66%;
+        justify-content: space-between; }
+        .big-img .big__img_wrapp .mnu__wrapp .mnu li {
+          line-height: 22px; }
+          .big-img .big__img_wrapp .mnu__wrapp .mnu li a {
+            text-transform: uppercase;
+            font-family: "Museo-Sans-Cyrl-700";
+            color: #292929;
+            font-size: 13px;
+            line-height: 19.94px; }
+        .big-img .big__img_wrapp .mnu__wrapp .mnu li.active {
+          border-bottom: 1px solid #149ed8; }
+          .big-img .big__img_wrapp .mnu__wrapp .mnu li.active a {
+            transition: all 0.3s;
+            color: #149ed8;
+            font-family: "Museo-Sans-Cyrl-900"; }
+      .big-img .big__img_wrapp .mnu__wrapp .mnu, .big-img .big__img_wrapp .mnu__wrapp .select__language, .big-img .big__img_wrapp .mnu__wrapp .search__wrapp {
+        display: flex;
+        height: inherit;
+        align-items: center; }
+        .big-img .big__img_wrapp .mnu__wrapp .mnu .lg__ru, .big-img .big__img_wrapp .mnu__wrapp .mnu .lg__en, .big-img .big__img_wrapp .mnu__wrapp .select__language .lg__ru, .big-img .big__img_wrapp .mnu__wrapp .select__language .lg__en, .big-img .big__img_wrapp .mnu__wrapp .search__wrapp .lg__ru, .big-img .big__img_wrapp .mnu__wrapp .search__wrapp .lg__en {
+          font-size: 14px;
+          line-height: 19.94px;
+          font-family: "Museo-Sans-Cyrl-900";
+          color: #149ed8; }
+        .big-img .big__img_wrapp .mnu__wrapp .mnu .lg__en, .big-img .big__img_wrapp .mnu__wrapp .select__language .lg__en, .big-img .big__img_wrapp .mnu__wrapp .search__wrapp .lg__en {
+          font-family: "Museo-Sans-Cyrl-500";
+          color: #8c8c8c; }
+        .big-img .big__img_wrapp .mnu__wrapp .mnu .ic__search, .big-img .big__img_wrapp .mnu__wrapp .select__language .ic__search, .big-img .big__img_wrapp .mnu__wrapp .search__wrapp .ic__search {
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: url(../img/search.svg) no-repeat; }
+  .big-img .info__text {
+    font-size: 22px;
+    line-height: 15.94px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Noto-Serif-Italic";
+    font-weight: 300; }
+  .big-img .carousel_wrapp {
+    display: block;
+    width: 100%;
+    position: relative; }
+    .big-img .carousel_wrapp .box__banner {
+      display: flex;
+      width: 100%;
+      justify-content: center; }
+      .big-img .carousel_wrapp .box__banner .banner {
+        display: flex;
+        width: 666px;
+        background: #ffffff;
+        margin-top: 46px;
+        height: 260px;
+        box-shadow: 0px 10px 17px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        opacity: 1; }
+        .big-img .carousel_wrapp .box__banner .banner .banner__wrapp {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          text-align: center;
+          box-shadow: 0px 10px 17px 3px rgba(0, 0, 0, 0.1); }
+          .big-img .carousel_wrapp .box__banner .banner .banner__wrapp .banner__name {
+            display: block;
+            width: 100%;
+            font-size: 13px;
+            letter-spacing: 2.59px;
+            line-height: 42.84px;
+            color: #fab330;
+            text-transform: uppercase;
+            font-family: "Museo-Sans-Cyrl-900";
+            margin-top: 25px; }
+          .big-img .carousel_wrapp .box__banner .banner .banner__wrapp .banner__descr {
+            font-size: 34px;
+            line-height: 42px;
+            font-family: "Noto-Serif-Italic";
+            margin: 0 0 24px 0; }
+          .big-img .carousel_wrapp .box__banner .banner .banner__wrapp .banner__btn {
+            display: flex;
+            width: 190px;
+            height: 45px;
+            justify-content: center;
+            align-items: center;
+            background-color: #fab330;
+            font-size: 12px;
+            line-height: 29.89px;
+            letter-spacing: 2.64px;
+            color: #ffffff;
+            text-transform: uppercase;
+            border-radius: 4px; }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 18px 2px #000000;
+  background: transparent; }
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #ffffff; }
+
+.owl-theme .owl-nav {
+  position: absolute;
+  top: 41%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0;
+  padding: 0 15px; }
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  font-size: 48px;
+  color: #ffffff; }
+  .owl-carousel .owl-nav button.owl-prev:hover,
+  .owl-carousel .owl-nav button.owl-next:hover,
+  .owl-carousel button.owl-dot:hover {
+    background: none; }
+
+/*# sourceMappingURL=main.css.map */
