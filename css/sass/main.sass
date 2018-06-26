@@ -1,7 +1,5 @@
 @import "bourbon/bourbon"
 
-
-
 $yellow-color: #fab330
 $white-color: #ffffff
 $black-color: #000000
@@ -9,8 +7,6 @@ $blue-color: #0066a1
 $hover-color: #149ed8
 $text-color: #292929
 $descr-color: #8c8c8c
-
-
 
 body
 	font-family: "Museo-Sans-Cyrl-900" , sans-serif
@@ -24,24 +20,21 @@ a,a:hover,a:focus,a:visited,button,button:hover,button:visited,button:focus
 	outline: none
 	text-decoration: none
 	text-transform: uppercase
-
 ul
 	margin: 0
 	padding: 0
 ul li
 	list-style-type: none
-
 .hidden
 	display: none
-
 .container
 	width: 1170px
 	margin: 0 auto
 .header
+	background-color: $blue-color
 	.header__text
 		display: flex
 		height: 50px
-		background-color: $blue-color
 		justify-content: center
 		align-items: center
 		.text__header
@@ -54,11 +47,10 @@ ul li
 			height: 23px
 			background: url(../img/close.svg)no-repeat
 			margin-left: 12px
-			
 .big-img
 	height: 530px
 	background: url(../img/kamako-screen.jpg)top center no-repeat
-	background-hover: cover 
+	background-size: cover 
 	.big__img_wrapp
 		height: 75px
 		background: $white-color
@@ -80,7 +72,7 @@ ul li
 						text-transform: uppercase
 						font-family: "Museo-Sans-Cyrl-700"
 						color: $text-color
-						font-size: 13px
+						font-size: 0.821em
 						line-height: 19.94px
 				li.active
 					border-bottom: 1px solid $hover-color
@@ -92,14 +84,12 @@ ul li
 				display: flex
 				height: inherit
 				align-items: center
-				
-						
-				.lg__ru,.lg__en
-					font-size: 14px
+				a.lg__select.active,a.lg__select
+					font-size: 0.875em
 					line-height: 19.94px
 					font-family: "Museo-Sans-Cyrl-900"
 					color: $hover-color
-				.lg__en
+				a.lg__select
 					font-family: "Museo-Sans-Cyrl-500"
 					color: $descr-color
 				.ic__search
@@ -107,6 +97,8 @@ ul li
 					width: 24px
 					height: 24px
 					background: url(../img/search.svg)no-repeat
+			.burger-menu-wrapper
+				display: none
 	.info__text
 		font-size: 22px
 		line-height: 15.94px
@@ -125,12 +117,11 @@ ul li
 			.banner
 				display: flex
 				width: 666px
-				background: $white-color
+				background: rgba(255,255,255,.96)
 				margin-top: 46px
 				height: 260px
 				box-shadow: 0px 10px 17px 3px rgba(0,0,0,.1)
 				border-radius: 4px 
-				opacity: 1
 				.banner__wrapp
 					display: flex
 					flex-direction: column
@@ -141,7 +132,7 @@ ul li
 					.banner__name
 						display: block
 						width: 100%
-						font-size: 13px
+						font-size: 0.821em
 						letter-spacing: 2.59px
 						line-height: 42.84px
 						color: $yellow-color
@@ -149,11 +140,10 @@ ul li
 						font-family: "Museo-Sans-Cyrl-900"
 						margin-top: 25px
 					.banner__descr
-						font-size: 34px
+						font-size: 2.125em
 						line-height: 42px
 						font-family: "Noto-Serif-Italic"
 						margin: 0 0 24px 0
-
 					.banner__btn
 						display: flex
 						width: 190px
@@ -161,7 +151,7 @@ ul li
 						justify-content: center
 						align-items: center
 						background-color: $yellow-color
-						font-size: 12px
+						font-size: 0.75em
 						line-height: 29.89px
 						letter-spacing: 2.64px
 						color: $white-color
@@ -169,8 +159,8 @@ ul li
 						border-radius: 4px
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span
 	display: block
-	width: 12px
-	height: 12px
+	width: 8px
+	height: 8px
 	border: 2px solid $white-color
 	border-radius: 50%
 	box-shadow: 0 0 18px 2px #000000
@@ -179,23 +169,128 @@ ul li
 	background: $white-color
 .owl-theme .owl-nav
 	position: absolute
-	top: 41%
+	top: 40%
 	display: flex
-	width: 100%
+	width: 91%
 	justify-content: space-between
 	margin-top: 0
-	padding: 0 15px
+	padding: 0 25px
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next span,
+	display: block
+	width: 17px
+	height: 27px
+	background: url(../img/arrow-right.svg)no-repeat
+	color: transparent
+.owl-theme .owl-nav [class*=owl-]:hover
+	background: transparent
+.owl-carousel .owl-nav button.owl-prev span
+	background: url(../img/arrow-left.svg)no-repeat
+.owl-theme .owl-dots
+	margin-top: 40px
 
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel button.owl-dot
-	font-size: 48px
-	color: $white-color
-	&:hover
-		background: none
-		
+/////////////// burger mnu //////////////////////
 
+.burger-menu-wrapper
+	top: 50%
+	left: 1.45rem
+	transform: translate(-50%, -50%)
+	width: 2.5rem
+	height: 75px
+	overflow: hidden
+	cursor: pointer
+	position: relative
+	display: block
+	.circle
+		position: relative
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		fill: none
+		stroke: #000000
+		stroke-width: 4%
+		height: 60%
+		width: 2.5rem
+		stroke-dasharray: 550
+		stroke-dashoffset: -550
+		transition: .7s ease-in-out
+	.line
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		height: 7%
+		width: 1.5rem
+		stroke: #000000
+		stroke-width: 10%
+	.top-line
+		transform-origin: left center
+		top: 39%
+		transition: .7s ease-in-out
+	.middle-line
+		top: 47%
+	.bottom-line
+		transform-origin: left center
+		top: 55%
+		transition: .7s ease-in-out
+.burger-menu-wrapper.open .circle
+	stroke-dashoffset: 0
+.burger-menu-wrapper.open .middle-line
+	transform: translateX(151%)
+	transition: .7s ease-in-out
+.burger-menu-wrapper.closing .middle-line
+	transform: translateX(-50%)
+	transition: .7s ease-in-out
+.burger-menu-wrapper.open .top-line,.burger-menu-wrapper.open .bottom-line
+	transform: translateX(-50%) rotate(45deg)
+	top: 1.6rem
+	left: 1.5rem
+.burger-menu-wrapper.open .bottom-line
+	transform: translateX(-50%) rotate(-45deg)
+	top: 2.65rem
+/////////////// burger mnu //////////////////////
+
+
+/////////////// выпадающее меню //////////////////////
 	
-		
-		
-				
+.top__mnu
+	position: absolute
+	width: 100%
+	background-color: rgba(0,0,0,.85)
+	z-index: 50
+	right: 0
+	top: 11.65rem
+	display: none
+	ul,li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		+animation-duration(.7s)
+		li
+			&:nth-child(1) a
+				+animation-delay(0)
+			&:nth-child(2) a
+				+animation-delay(.1s)
+			&:nth-child(3) a
+				+animation-delay(.2s)
+			&:nth-child(4) a
+				+animation-delay(.3s)
+		a
+			display: flex
+			text-transform: uppercase
+			opacity: 0
+			position: relative
+			height: 77px
+			letter-spacing: 2px
+			justify-content: center
+			align-items: center
+			font-family: "Museo-Sans-Cyrl-700"
+			color: $white-color
+			font-size: 0.875em
+			line-height: 19.94px			
+			&:hover
+				transition: .5s ease-in-out
+				background: rgba(0,102,161,.6)
+				backdrop-filter: blur(15px)
+				color: $yellow-color 
+/////////////// выпадающее меню //////////////////////

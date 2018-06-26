@@ -29,47 +29,122 @@
 	
 }
 
-
+@media screen and (min-width: 320px) and (max-width: 640px){
+    .big-img .carousel_wrapp .box__banner .banner{ 
+        height: auto;
+        margin-top: 10px;
+        width: 95%; 
+    }
+	.big-img .carousel_wrapp .box__banner .banner .banner__wrapp .banner__btn{
+        margin-bottom: 25px;
+    }
+    .big-img .big__img_wrapp .mnu__wrapp{justify-content: space-between;}
+    .big-img .big__img_wrapp .mnu__wrapp .mnu{display: none;}
+}
 
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media screen and (min-width: 320px) and (max-width: 479px){
-	
-/* /////////////////////////////////////////////////////////////// */
-}	
+@media screen and (min-width: 320px) and (max-width: 767px){
+	.container{ width: 95%;   }
+    .header .header__text{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .header .header__text .text__header{
+        line-height: 25px;
+        margin: 1% 0;
+        font-size: 1em;
+    }
 
-/* Small Devices, Tablets */
-@media screen and (min-width: 480px) and (max-width : 639px){
-	
-	
+    .header .header__text .ic__close{margin: 5px 0 5px 0;}
+    .big-img .big__img_wrapp .mnu__wrapp{justify-content: space-between;}
+    .big-img .big__img_wrapp .mnu__wrapp .mnu{display: none;}
+    .big-img .big__img_wrapp .mnu__wrapp .burger-menu-wrapper{display: block;}
+    .big-img .info__text{
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .big-img .carousel_wrapp .box__banner .banner .banner__wrapp .banner__btn{
+        margin-bottom: 25px;
+    }
+    .big-img .carousel_wrapp .box__banner .banner .banner__wrapp .banner__descr{
+        font-size: 1.85em;
+    }
+    .owl-theme .owl-dots, .owl-theme .owl-nav{margin-top: 20px;}
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px){
+    .owl-theme .owl-nav{display: none}
+}
 
+@media screen and (min-width: 451px) and (max-width : 480px){
+    .top__mnu{top: 10.00rem;   }
+}
 
+@media screen and (min-width: 451px) and (max-width : 1024px){
+    .big-img .carousel_wrapp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
+/* Small Devices, Tablets */
+@media screen and (min-width: 480px) and (max-width : 767px){
+    .top__mnu{top: 8.35rem;}
+    .owl-theme .owl-nav{
+        top: 33%;
+        width: 98%;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 480px) and (max-width : 639px){
+	.container{width: 93%;}
+    .header .header__text .text__header{
+        width: 94%;
+        margin-bottom: 1%;
+    }
+    .owl-theme .owl-nav [class*=owl-]{margin: 0;}
+    .big-img .carousel_wrapp .box__banner .banner .banner__wrapp .banner__descr{font-size: 2em;}
+}
 
 @media screen and (min-width: 640px) and (max-width : 767px){
-
-	
+    .container{ width: 93%;  }
+    .header .header__text .text__header{  width: 94%;   }
 }
+
 /* Small Devices, Tablets */
-@media screen and (min-width: 768px) and (max-width : 991px) {
-	
+@media screen and (min-width: 768px) and (max-width : 1270px) {
+    .container{width: 100%;}
+    .big-img .big__img_wrapp .mnu__wrapp .logo{margin: 0;}
+    .big-img .big__img_wrapp .mnu__wrapp .mnu{   width: 35rem;  }
+    .owl-theme .owl-nav{
+        margin-top: 0px;
+        padding: 25px 30px;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width : 1023px) {
+    .big-img .big__img_wrapp .mnu__wrapp .logo{margin: 0;}
+    .big-img .big__img_wrapp .mnu__wrapp .mnu{   width: 35rem;  }
+    .big-img .big__img_wrapp .mnu__wrapp .mnu li a{font-size: 0.6875em;}
+    
+}
+@media screen and (min-width: 1024px) and (max-width : 1279px) {
+    .big-img .big__img_wrapp .mnu__wrapp .mnu{width: 48rem;}
+    
 }
 
 /* Medium Devices, Desktops */
-@media screen and (min-width : 992px) and (max-width: 1200px){
-	
+
+@media screen and (min-width : 1280px) and (max-width: 1400px){
+	.big-img .big__img_wrapp .mnu__wrapp .mnu li a{font-size: 0.821em;}
 	
 }
  /* Large Devices, Wide Screens */
-@media screen and (min-width : 1200px) and (max-width: 1370px) {
-	
-	
+
+@media screen and (min-width : 1371px) and (max-width: 1920px) {
+    .container{width: 100%;}
 }
-@media screen and (min-width : 1371px) and (max-width: 1600px) {}
-@media screen and (min-width : 1920px){
-	
-	
-}	

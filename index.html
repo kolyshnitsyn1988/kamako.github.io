@@ -24,9 +24,11 @@
 <body>
 <div id="wrapper">
 	<div class="header">
-		<div class="header__text">
-			<span class="text__header">КАМАКО — ведущий производитель майонезов, соусов и кетчупов в Беларуси на протяжении 20 лет</span>
-			<span class="ic__close"></span>
+		<div class="container">
+			<div class="header__text">
+				<span class="text__header">КАМАКО — ведущий производитель майонезов, соусов и кетчупов в Беларуси на протяжении 20 лет</span>
+				<a href="#" class="ic__close"></a>
+			</div>
 		</div>
 	</div>
 	<div class="big-img">
@@ -42,22 +44,54 @@
 						<li><a href="#">Кулинарный клуб </a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
+					<div class="top__mnu">
+						<ul>
+							<li><a href="#">О компании </a></li>
+							<li><a href="#">Продукция</a></li>
+							<li><a href="#">Благотворительность</a></li>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Кулинарный клуб </a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
 					<div class="select__language">
-						<a href="#" class="lg__ru">РУС</a>
-						<a href="#" class="lg__en">&nbsp;|&nbsp;ENG</a>
+						<a href="#" class="lg__select active">РУС</a>
+						<a href="#" class="lg__select">&nbsp;|&nbsp;ENG</a>
 					</div>
 					<div class="search__wrapp">
 						<a href="#" class="ic__search"></a>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+						<symbol id="line" viewBox="0 0 150 1">
+							<line y1="0.5" x2="150" y2="0.5"/>
+						</symbol>
+						<symbol id="circle" viewBox="0 0 182 182">
+							<circle cx="91" cy="91" r="87.5"/>
+						</symbol>		
+					</svg>
+					<div class="burger-menu-wrapper">
+						<svg class="circle">
+							<use xlink:href="#circle">	
+						</svg>
+						<svg class="line top-line">
+							<use xlink:href="#line">	
+						</svg>
+						<svg class="line middle-line">
+							<use xlink:href="#line">	
+						</svg>
+						<svg class="line bottom-line">
+							<use xlink:href="#line">	
+						</svg>
 					</div>
 				</div>
 			</div>
 		</div>
 		<h3 class="info__text">Пусть всегда будет вкусно!</h3>
-		<div class="container">
-			<div class="carousel_wrapp owl-carousel owl-theme owl-loaded">
-				<div class="owl-stage-outer">
-					<div class="owl-stage">
-						<div class="owl-item">
+		<div class="carousel_wrapp owl-carousel owl-theme owl-loaded">
+			<div class="owl-stage-outer">
+				<div class="owl-stage">
+					<div class="owl-item">
+						<div class="container">
 							<div class="box__banner">
 								<div class="banner">
 									<div class="banner__wrapp">
@@ -65,12 +99,14 @@
 										<span class="banner__descr">Создай свой кулинарный шедевр
 											вместе с соусами Камако
 										</span>
-										<a href="#" class="banner__btn">Узнать больше</span>
+										<a href="#" class="banner__btn">Узнать больше</a>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="owl-item">
+						</div>				
+					</div>
+					<div class="owl-item">
+						<div class="container">
 							<div class="box__banner">
 								<div class="banner">
 									<div class="banner__wrapp">
@@ -78,79 +114,30 @@
 										<span class="banner__descr">Создай свой кулинарный шедевр
 											вместе с соусами Камако
 										</span>
-										<a href="#" class="banner__btn">Узнать больше</span>
+										<a href="#" class="banner__btn">Узнать больше</a>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="owl-item">
+						</div>				
+					</div>
+					<div class="owl-item">
+						<div class="container">
 							<div class="box__banner">
 								<div class="banner">
 									<div class="banner__wrapp">
 										<span class="banner__name">— Кулинарный клуб —</span>
 										<span class="banner__descr">Создай свой кулинарный шедевр
-										вместе с соусами Камако
+											вместе с соусами Камако
 										</span>
-										<a href="#" class="banner__btn">Узнать больше</span>
+										<a href="#" class="banner__btn">Узнать больше</a>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div>				
 					</div>
 				</div>
-						<!-- <div class="owl-nav">
-							<div class="owl-prev customPrevBtn">prev</div>
-							<div class="owl-next customNextBtn">next</div>
-						</div>
-						<div class="owl-dots">
-							<div class="owl-dot active"><span></span></div>
-							<div class="owl-dot"><span></span></div>
-							<div class="owl-dot"><span></span></div>
-						</div> -->
 			</div>
-			
 		</div>
-		
-
-
-
-
-
-		<!-- <div class="carousel_wrapp owl-carousel owl-theme">
-			<div class="box__banner">
-				<div class="banner">
-					<div class="banner__wrapp">
-						<span class="banner__name">— Кулинарный клуб —</span>
-						<span class="banner__descr">Создай свой кулинарный шедевр
-							вместе с соусами Камако
-						</span>
-						<a href="#" class="banner__btn">Узнать больше</span>
-					</div>
-				</div>
-			</div>
-			<div class="box__banner">
-				<div class="banner ">
-					<div class="banner__wrapp">
-						<span class="banner__name">— Кулинарный клуб —</span>
-						<span class="banner__descr">Создай свой кулинарный шедевр
-						вместе с соусами Камако							
-						</span>
-						<a href="#" class="banner__btn">Узнать больше</span>
-					</div>
-				</div>
-			</div>
-			<div class="box__banner ">
-				<div class="banner">
-					<div class="banner__wrapp">
-						<span class="banner__name">— Кулинарный клуб —</span>
-						<span class="banner__descr">Создай свой кулинарный шедевр
-						вместе с соусами Камако							
-						</span>
-						<a href="#" class="banner__btn">Узнать больше</span>
-					</div>
-				</div>
-			</div>
-		</div> -->
 	</div>
 </div>
 </body>

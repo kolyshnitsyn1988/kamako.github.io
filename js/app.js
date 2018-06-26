@@ -1,74 +1,53 @@
 $(document).ready(function(){
     
-    // навигационное меню //
-    $(".menu-icon").click(function(e){
-        e.preventDefault();
-        $this = $(this)
-        if($this.hasClass("is-opened")){
-            $this.addClass("is-closed").removeClass("is-opened");
-        }else{
-            $this.removeClass("is-closed").addClass("is-opened");
-        }
-    });
-    $(".menu-icon-cross").click(function(){
-        if ($(".top_mnu").is(":visible")){
-            $(".top_mnu").fadeOut(600);
-            $(".top_mnu li a").removeClass("fadeInUp animated");
-        } else {
-            $(".top_mnu").fadeIn(600);
-            $(".top_mnu li a").addClass("fadeInUp animated");
-        };
-    });
+    // elements menu //
 
-    
-    // элементы списка портфолио //
-        $('.projects_list_wrapp li').click(function(){
-            $('.projects_list_wrapp li').removeClass("active");
-            $(this).addClass("active");
-        });
-        
-    // элементы списка портфолио //
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    // анимация элементов формы //
-    
-    
     $(".mnu li").click(function(){
         $(".big-img .big__img_wrapp .mnu__wrapp .mnu li").removeClass("active");
         $(this).addClass("active");
     });
-// Слайдер
+
+    // элементы языков в меню //
+
+
+    $(".lg__select").click(function(){
+        $(".lg__select").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    // элементы языков в меню //
+
+    // Слайдер
     $(".owl-carousel").owlCarousel({
         items: 1,
         nav: true,
-        dots: true,
         loop: true,
         center: true,
-        // autoplay: true,
-        // autoplayTimeout: 7500,
+        autoplay: true,
+        autoplayTimeout: 7500,
         lazyLoad: true
-       
-        
-        
-        
     });
+    // Слайдер
+
     
+    //////////////////// навигационное меню //////////////////
 
-   
-   
-// Слайдер
-   
+    $(".burger-menu-wrapper").click(function(){
+        $this = $(this);
+        if($this.hasClass("open")){
+            $this.addClass("closing").removeClass("open");
+        }else{
+            $this.removeClass("closing").addClass("open");
+        }
+        if ($(".top__mnu").is(":visible")){
+            $(".top__mnu").fadeOut(600);
+            $(".top__mnu li a").removeClass("fadeInUp animated");
+        } else {
+            $(".top__mnu").fadeIn(600);
+            $(".top__mnu li a").addClass("fadeInUp animated");
+        }
+    });
 
-   
-     
-
+    //////////////////// навигационное меню //////////////////
 })
 
